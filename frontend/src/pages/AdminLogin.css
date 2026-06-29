@@ -1,0 +1,49 @@
+.admin-login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+  padding: 20px;
+}
+.admin-login-card {
+  background: white;
+  padding: 48px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+.admin-logo { text-align: center; margin-bottom: 32px; }
+.admin-logo span { font-size: 40px; }
+.admin-logo h2 { font-family: var(--font-display); font-size: 26px; margin: 12px 0 6px; }
+.admin-logo p { color: var(--mid); font-size: 13px; }
+.admin-hint { text-align: center; margin-top: 16px; color: var(--mid); }
+.admin-auth-link { text-align: center; margin-top: 14px; font-size: 14px; color: var(--mid); }
+.admin-auth-link a { color: var(--gold); font-weight: 500; }
+.admin-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  background: var(--cream, #f5f0eb);
+  padding: 4px;
+  border-radius: 8px;
+}
+.admin-tabs button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--mid);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.admin-tabs button.active {
+  background: white;
+  color: var(--black);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
